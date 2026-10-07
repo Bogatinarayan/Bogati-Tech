@@ -1,0 +1,549 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Bogati Tech | Web Development, AI Automation & Digital Marketing in Kathmandu, Nepal</title>
+  <meta name="description" content="Bogati Tech is an IT company in Kathmandu, Nepal offering website development, digital marketing, graphic design, AI automation, AI chatbots, SaaS products and technical support plans." />
+  <meta name="keywords" content="Bogati Tech, web development Nepal, IT company Kathmandu, AI automation, AI chatbot, digital marketing Nepal, SaaS, graphic design" />
+  <meta name="theme-color" content="#ffffff" />
+  <link rel="canonical" href="https://bogatitech.com/" />
+  <link rel="icon" href="assets/img/logo.jpg" />
+
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="Bogati Tech" />
+  <meta property="og:title" content="Bogati Tech | Transforming ideas into digital reality" />
+  <meta property="og:description" content="Websites, AI automation, chatbots, SaaS, marketing and design from Kathmandu, Nepal." />
+  <meta property="og:url" content="https://bogatitech.com/" />
+  <meta property="og:image" content="https://bogatitech.com/assets/img/logo.jpg" />
+  <meta name="twitter:card" content="summary_large_image" />
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "LocalBusiness",
+    "name": "Bogati Tech",
+    "url": "https://bogatitech.com",
+    "logo": "https://bogatitech.com/assets/img/logo.jpg",
+    "image": "https://bogatitech.com/assets/img/logo.jpg",
+    "description": "IT solutions agency in Kathmandu, Nepal: web development, AI automation, chatbots, SaaS, digital marketing and design.",
+    "telephone": "+977-9762519563",
+    "email": "boy082913@gmail.com",
+    "address": { "@type": "PostalAddress", "addressLocality": "Kathmandu", "addressCountry": "NP" },
+    "makesOffer": [
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Website Development" } },
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "AI Automation" } },
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "AI Chatbots" } },
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Digital Marketing" } },
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Graphic Designing" } },
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "SaaS Products" } },
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Technical Support Plans" } }
+    ]
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      { "@type": "Question", "name": "How long does a website take to build?", "acceptedAnswer": { "@type": "Answer", "text": "A business website usually takes 2 to 4 weeks. Larger web apps and SaaS products are scoped individually." } },
+      { "@type": "Question", "name": "Can you automate my business processes with AI?", "acceptedAnswer": { "@type": "Answer", "text": "Yes. We build custom AI workflows with n8n and Make for lead handling, invoicing, reporting, support and more." } },
+      { "@type": "Question", "name": "Do you provide support after launch?", "acceptedAnswer": { "@type": "Answer", "text": "Yes. Our Technical Support plans include monitoring, backups, security updates and priority help." } }
+    ]
+  }
+  </script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Plus+Jakarta+Sans:wght@500;600;700;800&display=swap" rel="stylesheet" />
+
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: { extend: { colors: {
+        ink: '#0b1b3a',
+        brand: { blue: '#1565c0', sky: '#42a5f5', cyan: '#29b6f6', purple: '#7b1fa2' }
+      } } }
+    };
+  </script>
+  <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+<body>
+  <div id="scroll-progress"></div>
+
+  <!-- TOP BAR -->
+  <div class="hidden md:block bg-ink text-slate-200 text-xs">
+    <div class="max-w-7xl mx-auto px-5 py-2 flex justify-between items-center">
+      <div class="flex gap-6">
+        <a href="tel:+9779762519563" class="flex items-center gap-1.5 hover:text-white"><i data-lucide="phone" class="h-3.5 w-3.5"></i> +977 9762519563</a>
+        <a href="mailto:boy082913@gmail.com" class="flex items-center gap-1.5 hover:text-white"><i data-lucide="mail" class="h-3.5 w-3.5"></i> boy082913@gmail.com</a>
+      </div>
+      <div class="flex items-center gap-1.5"><i data-lucide="map-pin" class="h-3.5 w-3.5"></i> Kathmandu, Nepal · bogatitech.com</div>
+    </div>
+  </div>
+
+  <!-- NAV -->
+  <header id="nav" class="sticky top-0 z-50 transition-all duration-300 bg-white">
+    <div class="max-w-7xl mx-auto px-5 py-3 flex items-center justify-between">
+      <a href="#home" class="flex items-center gap-3" aria-label="Bogati Tech home">
+        <img src="assets/img/logo.jpg" alt="Bogati Tech logo" class="h-12 w-12 object-contain" />
+        <span class="font-display font-extrabold text-xl tracking-tight text-ink">Bogati<span class="gradient-text">Tech</span></span>
+      </a>
+      <nav class="hidden lg:flex items-center gap-7 text-sm font-medium text-slate-600" aria-label="Main">
+        <a class="nav-link" href="#home">Home</a>
+        <a class="nav-link" href="#about">About</a>
+        <a class="nav-link" href="#services">Services</a>
+        <a class="nav-link" href="#process">Process</a>
+        <a class="nav-link" href="#pricing">Pricing</a>
+        <a class="nav-link" href="#work">Work</a>
+        <a class="nav-link" href="#faq">FAQ</a>
+        <a class="nav-link" href="#contact">Contact</a>
+      </nav>
+      <div class="flex items-center gap-3">
+        <a href="#contact" class="glow-btn hidden sm:inline-flex items-center gap-2 rounded-full px-5 py-2.5 text-sm font-semibold">Get a Free Quote <i data-lucide="arrow-right" class="h-4 w-4"></i></a>
+        <button id="menu-btn" class="lg:hidden card rounded-xl p-2.5" aria-label="Open menu" aria-expanded="false"><i data-lucide="menu" class="h-5 w-5 text-ink"></i></button>
+      </div>
+    </div>
+    <div id="mobile-menu" class="hidden lg:hidden card mx-4 mb-3 rounded-2xl p-5">
+      <nav class="flex flex-col gap-4 font-medium text-ink" aria-label="Mobile">
+        <a href="#home">Home</a><a href="#about">About</a><a href="#services">Services</a><a href="#process">Process</a><a href="#pricing">Pricing</a><a href="#work">Work</a><a href="#faq">FAQ</a><a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+  <!-- HERO -->
+  <section id="home" class="relative hero-bg overflow-hidden">
+    <canvas id="hero-canvas" class="absolute inset-0 w-full h-full" aria-hidden="true"></canvas>
+    <div class="absolute inset-0 grid-bg" aria-hidden="true"></div>
+
+    <div class="relative max-w-7xl mx-auto px-5 py-20 lg:py-28 grid lg:grid-cols-2 gap-10 items-center min-h-[620px]">
+      <div>
+        <span class="hero-in inline-flex items-center gap-2 card rounded-full px-4 py-1.5 text-xs font-semibold text-brand-blue">
+          <span class="h-2 w-2 rounded-full bg-emerald-500 animate-pulse"></span> Trusted IT Partner in Kathmandu, Nepal
+        </span>
+        <h1 class="hero-in mt-6 text-4xl sm:text-5xl lg:text-6xl font-extrabold leading-[1.08]">
+          Transforming ideas into <span class="gradient-text">digital reality</span>
+        </h1>
+        <p class="hero-in mt-6 text-lg text-slate-600 max-w-xl">Websites, AI automation, chatbots, SaaS products and digital marketing, delivered with trust, transparency and exceptional results to help your business scale.</p>
+        <div class="hero-in mt-8 flex flex-wrap gap-4">
+          <a href="#contact" class="glow-btn inline-flex items-center gap-2 rounded-full px-7 py-3.5 font-semibold">Start Your Project <i data-lucide="rocket" class="h-5 w-5"></i></a>
+          <a href="#services" class="outline-btn inline-flex items-center gap-2 rounded-full px-7 py-3.5 font-semibold">Explore Services <i data-lucide="layers" class="h-5 w-5"></i></a>
+        </div>
+        <div class="hero-in mt-10 grid grid-cols-3 gap-4 max-w-md">
+          <div><p class="font-display text-2xl font-extrabold text-ink">50+</p><p class="text-xs text-slate-500">Projects delivered</p></div>
+          <div><p class="font-display text-2xl font-extrabold text-ink">30+</p><p class="text-xs text-slate-500">Happy clients</p></div>
+          <div><p class="font-display text-2xl font-extrabold text-ink">24/7</p><p class="text-xs text-slate-500">Support</p></div>
+        </div>
+      </div>
+
+      <div class="relative hidden lg:block h-[440px]" aria-hidden="true">
+        <div class="card float absolute top-4 left-6 rounded-2xl p-5 w-56" data-depth="30">
+          <span class="h-10 w-10 rounded-xl bg-blue-50 grid place-items-center"><i data-lucide="code-xml" class="h-5 w-5 text-brand-blue"></i></span>
+          <p class="mt-3 font-display font-bold text-ink">Web Development</p>
+          <p class="text-xs text-slate-500">Next.js · React · Node</p>
+        </div>
+        <div class="card float-slow absolute top-40 right-0 rounded-2xl p-5 w-56" data-depth="50">
+          <span class="h-10 w-10 rounded-xl bg-purple-50 grid place-items-center"><i data-lucide="bot" class="h-5 w-5 text-brand-purple"></i></span>
+          <p class="mt-3 font-display font-bold text-ink">AI Automation</p>
+          <p class="text-xs text-slate-500">n8n · Make · Chatbots</p>
+        </div>
+        <div class="card float absolute bottom-2 left-20 rounded-2xl p-5 w-56" data-depth="20" style="animation-delay:-3s">
+          <span class="h-10 w-10 rounded-xl bg-sky-50 grid place-items-center"><i data-lucide="trending-up" class="h-5 w-5 text-brand-cyan"></i></span>
+          <p class="mt-3 font-display font-bold text-ink">Digital Marketing</p>
+          <p class="text-xs text-slate-500">SEO · Ads · Growth</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- TRUST STRIP -->
+  <section class="border-y border-slate-100 bg-white py-6" aria-label="Why clients trust us">
+    <div class="max-w-7xl mx-auto px-5 grid grid-cols-2 md:grid-cols-4 gap-6 text-sm font-medium text-slate-600">
+      <div class="flex items-center gap-3"><i data-lucide="shield-check" class="h-6 w-6 text-brand-blue"></i> Secure &amp; reliable builds</div>
+      <div class="flex items-center gap-3"><i data-lucide="zap" class="h-6 w-6 text-brand-blue"></i> Fast turnaround</div>
+      <div class="flex items-center gap-3"><i data-lucide="eye" class="h-6 w-6 text-brand-blue"></i> Transparent pricing</div>
+      <div class="flex items-center gap-3"><i data-lucide="headphones" class="h-6 w-6 text-brand-blue"></i> Ongoing support</div>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section id="about" class="relative py-24 overflow-hidden">
+    <div class="orb w-80 h-80 bg-brand-sky -top-10 -right-10"></div>
+    <div class="relative max-w-7xl mx-auto px-5 grid lg:grid-cols-2 gap-14 items-center">
+      <div class="reveal flex justify-center" style="perspective:1000px">
+        <div class="card rounded-[2rem] p-8 w-full max-w-md text-center" data-tilt data-tilt-max="10">
+          <img src="assets/img/logo.jpg" alt="Bogati Tech" class="h-72 w-72 object-contain mx-auto" loading="lazy" />
+          <p class="mt-2 font-display text-lg font-bold text-ink">Trust · Transparency · Results</p>
+          <div class="mt-5 grid grid-cols-3 gap-3 text-center">
+            <div class="rounded-xl bg-blue-50 py-3"><p class="font-display font-extrabold text-brand-blue">7+</p><p class="text-[11px] text-slate-500">Services</p></div>
+            <div class="rounded-xl bg-sky-50 py-3"><p class="font-display font-extrabold text-brand-blue">50+</p><p class="text-[11px] text-slate-500">Projects</p></div>
+            <div class="rounded-xl bg-purple-50 py-3"><p class="font-display font-extrabold text-brand-purple">24/7</p><p class="text-[11px] text-slate-500">Support</p></div>
+          </div>
+        </div>
+      </div>
+      <div class="reveal">
+        <p class="text-brand-blue font-bold tracking-widest text-xs uppercase">About Bogati Tech</p>
+        <h2 class="mt-3 text-3xl sm:text-4xl lg:text-5xl font-extrabold">A leading IT partner from <span class="gradient-text">Kathmandu</span></h2>
+        <p class="mt-5 text-slate-600">Bogati Tech is a leading IT company based in Kathmandu, Nepal, specializing in innovative technology solutions. We deliver high-quality services based on trust, transparency, and exceptional results to help businesses scale in the digital landscape.</p>
+        <p class="mt-4 text-slate-600">From startups to established companies, we combine design, engineering, marketing and AI to build digital products that look great, perform fast and grow your revenue.</p>
+        <div class="mt-8 grid sm:grid-cols-2 gap-4">
+          <div class="card rounded-2xl p-5"><i data-lucide="target" class="h-6 w-6 text-brand-blue"></i><h3 class="mt-3 font-bold">Our Mission</h3><p class="mt-1 text-sm text-slate-600">Make modern technology accessible and profitable for every Nepali business.</p></div>
+          <div class="card rounded-2xl p-5"><i data-lucide="telescope" class="h-6 w-6 text-brand-purple"></i><h3 class="mt-3 font-bold">Our Vision</h3><p class="mt-1 text-sm text-slate-600">To be South Asia's most trusted AI-first digital agency.</p></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SERVICES -->
+  <section id="services" class="relative py-24 soft-bg">
+    <div class="max-w-7xl mx-auto px-5">
+      <div class="text-center max-w-2xl mx-auto reveal">
+        <p class="text-brand-blue font-bold tracking-widest text-xs uppercase">What We Do</p>
+        <h2 class="mt-3 text-3xl sm:text-4xl lg:text-5xl font-extrabold">Services built to <span class="gradient-text">scale your business</span></h2>
+        <p class="mt-4 text-slate-600">From a first website to AI-powered operations, one team handles everything.</p>
+      </div>
+
+      <div class="mt-14 grid sm:grid-cols-2 lg:grid-cols-3 gap-6" style="perspective:1200px">
+        <article class="service-card card reveal rounded-3xl p-7" data-tilt>
+          <div class="icon-wrap h-14 w-14 rounded-2xl bg-gradient-to-br from-brand-blue to-brand-sky grid place-items-center shadow-lg shadow-brand-sky/30"><i data-lucide="code-xml" class="h-7 w-7 text-white"></i></div>
+          <div class="card-body">
+            <h3 class="mt-5 text-xl font-bold">Website Development</h3>
+            <p class="mt-2 text-slate-600 text-sm">Custom Next.js / React web applications, business sites and portals.</p>
+            <ul class="check-list mt-4 space-y-2 text-sm text-slate-600">
+              <li><i data-lucide="check" class="h-4 w-4 text-brand-blue mt-0.5 shrink-0"></i>Responsive &amp; SEO-ready</li>
+              <li><i data-lucide="check" class="h-4 w-4 text-brand-blue mt-0.5 shrink-0"></i>E-commerce &amp; booking systems</li>
+              <li><i data-lucide="check" class="h-4 w-4 text-brand-blue mt-0.5 shrink-0"></i>Admin dashboards &amp; CMS</li>
+            </ul>
+          </div>
+        </article>
+        <article class="service-card card reveal rounded-3xl p-7" data-tilt>
+          <div class="icon-wrap h-14 w-14 rounded-2xl bg-gradient-to-br from-brand-purple to-brand-blue grid place-items-center shadow-lg shadow-brand-purple/30"><i data-lucide="workflow" class="h-7 w-7 text-white"></i></div>
+          <div class="card-body">
+            <h3 class="mt-5 text-xl font-bold">AI Automation</h3>
+            <p class="mt-2 text-slate-600 text-sm">Streamline operations with custom AI workflows using n8n and Make.</p>
+            <ul class="check-list mt-4 space-y-2 text-sm text-slate-600">
+              <li><i data-lucide="check" class="h-4 w-4 text-brand-blue mt-0.5 shrink-0"></i>Lead &amp; CRM automation</li>
+              <li><i data-lucide="check" class="h-4 w-4 text-brand-blue mt-0.5 shrink-0"></i>Auto reports &amp; invoicing</li>
+              <li><i data-lucide="check" class="h-4 w-4 text-brand-blue mt-0.5 shrink-0"></i>WhatsApp / email workflows</li>
+            </ul>
+          </div>
+        </article>
+        <article class="service-card card reveal rounded-3xl p-7" data-tilt>
+          <div class="icon-wrap h-14 w-14 rounded-2xl bg-gradient-to-br from-brand-cyan to-brand-blue grid place-items-center shadow-lg shadow-brand-cyan/30"><i data-lucide="message-square-code" class="h-7 w-7 text-white"></i></div>
+          <div class="card-body">
+            <h3 class="mt-5 text-xl font-bold">AI Chatbots</h3>
+            <p class="mt-2 text-slate-600 text-sm">Intelligent 24/7 customer support agents integrated into your website.</p>
+            <ul class="check-list mt-4 space-y-2 text-sm text-slate-600">
+              <li><i data-lucide="check" class="h-4 w-4 text-brand-blue mt-0.5 shrink-0"></i>Trained on your business data</li>
+              <li><i data-lucide="check" class="h-4 w-4 text-brand-blue mt-0.5 shrink-0"></i>Lead capture &amp; bookings</li>
+              <li><i data-lucide="check" class="h-4 w-4 text-brand-blue mt-0.5 shrink-0"></i>Website, WhatsApp, Messenger</li>
+            </ul>
+          </div>
+        </article>
+        <article class="service-card card reveal rounded-3xl p-7" data-tilt>
+          <div class="icon-wrap h-14 w-14 rounded-2xl bg-gradient-to-br from-brand-sky to-brand-cyan grid place-items-center shadow-lg shadow-brand-sky/30"><i data-lucide="megaphone" class="h-7 w-7 text-white"></i></div>
+          <div class="card-body">
+            <h3 class="mt-5 text-xl font-bold">Digital Marketing</h3>
+            <p class="mt-2 text-slate-600 text-sm">Strategic campaigns, SEO and targeted traffic that converts.</p>
+            <ul class="check-list mt-4 space-y-2 text-sm text-slate-600">
+              <li><i data-lucide="check" class="h-4 w-4 text-brand-blue mt-0.5 shrink-0"></i>SEO &amp; content strategy</li>
+              <li><i data-lucide="check" class="h-4 w-4 text-brand-blue mt-0.5 shrink-0"></i>Google &amp; Meta Ads</li>
+              <li><i data-lucide="check" class="h-4 w-4 text-brand-blue mt-0.5 shrink-0"></i>Social media management</li>
+            </ul>
+          </div>
+        </article>
+        <article class="service-card card reveal rounded-3xl p-7" data-tilt>
+          <div class="icon-wrap h-14 w-14 rounded-2xl bg-gradient-to-br from-brand-purple to-brand-sky grid place-items-center shadow-lg shadow-brand-purple/30"><i data-lucide="palette" class="h-7 w-7 text-white"></i></div>
+          <div class="card-body">
+            <h3 class="mt-5 text-xl font-bold">Graphic Designing</h3>
+            <p class="mt-2 text-slate-600 text-sm">Brand identity and creative visual systems people remember.</p>
+            <ul class="check-list mt-4 space-y-2 text-sm text-slate-600">
+              <li><i data-lucide="check" class="h-4 w-4 text-brand-blue mt-0.5 shrink-0"></i>Logo &amp; brand guidelines</li>
+              <li><i data-lucide="check" class="h-4 w-4 text-brand-blue mt-0.5 shrink-0"></i>Social &amp; ad creatives</li>
+              <li><i data-lucide="check" class="h-4 w-4 text-brand-blue mt-0.5 shrink-0"></i>UI/UX design in Figma</li>
+            </ul>
+          </div>
+        </article>
+        <article class="service-card card reveal rounded-3xl p-7" data-tilt>
+          <div class="icon-wrap h-14 w-14 rounded-2xl bg-gradient-to-br from-brand-blue to-brand-purple grid place-items-center shadow-lg shadow-brand-blue/30"><i data-lucide="cloud-cog" class="h-7 w-7 text-white"></i></div>
+          <div class="card-body">
+            <h3 class="mt-5 text-xl font-bold">SaaS Products</h3>
+            <p class="mt-2 text-slate-600 text-sm">Cloud-native, scalable software from idea to launch.</p>
+            <ul class="check-list mt-4 space-y-2 text-sm text-slate-600">
+              <li><i data-lucide="check" class="h-4 w-4 text-brand-blue mt-0.5 shrink-0"></i>MVP in weeks, not months</li>
+              <li><i data-lucide="check" class="h-4 w-4 text-brand-blue mt-0.5 shrink-0"></i>Auth, billing &amp; multi-tenant</li>
+              <li><i data-lucide="check" class="h-4 w-4 text-brand-blue mt-0.5 shrink-0"></i>Scalable cloud architecture</li>
+            </ul>
+          </div>
+        </article>
+        <article class="service-card card reveal rounded-3xl p-7 sm:col-span-2 lg:col-span-3" data-tilt>
+          <div class="flex flex-col sm:flex-row sm:items-center gap-5">
+            <div class="icon-wrap h-14 w-14 shrink-0 rounded-2xl bg-gradient-to-br from-brand-cyan to-brand-blue grid place-items-center shadow-lg shadow-brand-cyan/30"><i data-lucide="life-buoy" class="h-7 w-7 text-white"></i></div>
+            <div class="card-body flex-1"><h3 class="text-xl font-bold">Technical Support Subscriptions &amp; Plans</h3>
+            <p class="mt-1 text-slate-600 text-sm">Tiered, ongoing IT maintenance, monitoring and security packages so your systems never sleep.</p></div>
+            <a href="#pricing" class="glow-btn rounded-full px-6 py-3 text-sm font-semibold text-center">View Plans</a>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- WHY CHOOSE US (dark band) -->
+  <section class="dark-band relative py-24 overflow-hidden">
+    <div class="orb w-96 h-96 bg-brand-sky top-0 right-0 opacity-30"></div>
+    <div class="relative max-w-7xl mx-auto px-5">
+      <div class="text-center max-w-2xl mx-auto reveal">
+        <p class="text-sky-300 font-bold tracking-widest text-xs uppercase">Why Bogati Tech</p>
+        <h2 class="mt-3 text-3xl sm:text-4xl lg:text-5xl font-extrabold">The agency that treats your business like <span class="text-sky-300">its own</span></h2>
+      </div>
+      <div class="mt-12 grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
+        <div class="reveal rounded-2xl bg-white/10 border border-white/15 p-6 backdrop-blur"><i data-lucide="sparkles" class="h-7 w-7 text-sky-300"></i><h3 class="mt-4 font-bold">AI-First Thinking</h3><p class="mt-2 text-sm text-slate-300">Every solution is designed to save you time with smart automation.</p></div>
+        <div class="reveal rounded-2xl bg-white/10 border border-white/15 p-6 backdrop-blur"><i data-lucide="gauge" class="h-7 w-7 text-sky-300"></i><h3 class="mt-4 font-bold">Performance Focused</h3><p class="mt-2 text-sm text-slate-300">Lightning-fast pages that rank higher and convert better.</p></div>
+        <div class="reveal rounded-2xl bg-white/10 border border-white/15 p-6 backdrop-blur"><i data-lucide="handshake" class="h-7 w-7 text-sky-300"></i><h3 class="mt-4 font-bold">Honest Partnership</h3><p class="mt-2 text-sm text-slate-300">Clear scope, clear pricing and regular updates. No surprises.</p></div>
+        <div class="reveal rounded-2xl bg-white/10 border border-white/15 p-6 backdrop-blur"><i data-lucide="lock" class="h-7 w-7 text-sky-300"></i><h3 class="mt-4 font-bold">Secure by Default</h3><p class="mt-2 text-sm text-slate-300">Modern security practices and regular backups built in.</p></div>
+      </div>
+      <div class="mt-14 grid grid-cols-2 md:grid-cols-4 gap-8 text-center border-t border-white/15 pt-10">
+        <div><p class="font-display text-4xl font-extrabold text-white"><span class="counter" data-to="50">0</span>+</p><p class="text-sm text-slate-300 mt-1">Projects Delivered</p></div>
+        <div><p class="font-display text-4xl font-extrabold text-white"><span class="counter" data-to="30">0</span>+</p><p class="text-sm text-slate-300 mt-1">Happy Clients</p></div>
+        <div><p class="font-display text-4xl font-extrabold text-white"><span class="counter" data-to="7">0</span></p><p class="text-sm text-slate-300 mt-1">Core Services</p></div>
+        <div><p class="font-display text-4xl font-extrabold text-white"><span class="counter" data-to="24">0</span>/7</p><p class="text-sm text-slate-300 mt-1">Support Available</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- INDUSTRIES -->
+  <section class="py-24">
+    <div class="max-w-7xl mx-auto px-5">
+      <div class="text-center max-w-2xl mx-auto reveal">
+        <p class="text-brand-blue font-bold tracking-widest text-xs uppercase">Industries</p>
+        <h2 class="mt-3 text-3xl sm:text-4xl lg:text-5xl font-extrabold">Solutions for <span class="gradient-text">every sector</span></h2>
+      </div>
+      <div class="mt-12 grid grid-cols-2 md:grid-cols-4 gap-5">
+        <div class="card reveal rounded-2xl p-6 text-center hover:-translate-y-1 transition"><i data-lucide="shopping-bag" class="h-8 w-8 mx-auto text-brand-blue"></i><p class="mt-3 font-semibold text-ink">Retail &amp; E-commerce</p></div>
+        <div class="card reveal rounded-2xl p-6 text-center hover:-translate-y-1 transition"><i data-lucide="graduation-cap" class="h-8 w-8 mx-auto text-brand-blue"></i><p class="mt-3 font-semibold text-ink">Education</p></div>
+        <div class="card reveal rounded-2xl p-6 text-center hover:-translate-y-1 transition"><i data-lucide="hotel" class="h-8 w-8 mx-auto text-brand-blue"></i><p class="mt-3 font-semibold text-ink">Hotels &amp; Travel</p></div>
+        <div class="card reveal rounded-2xl p-6 text-center hover:-translate-y-1 transition"><i data-lucide="hospital" class="h-8 w-8 mx-auto text-brand-blue"></i><p class="mt-3 font-semibold text-ink">Healthcare</p></div>
+        <div class="card reveal rounded-2xl p-6 text-center hover:-translate-y-1 transition"><i data-lucide="landmark" class="h-8 w-8 mx-auto text-brand-blue"></i><p class="mt-3 font-semibold text-ink">Finance</p></div>
+        <div class="card reveal rounded-2xl p-6 text-center hover:-translate-y-1 transition"><i data-lucide="building-2" class="h-8 w-8 mx-auto text-brand-blue"></i><p class="mt-3 font-semibold text-ink">Real Estate</p></div>
+        <div class="card reveal rounded-2xl p-6 text-center hover:-translate-y-1 transition"><i data-lucide="utensils" class="h-8 w-8 mx-auto text-brand-blue"></i><p class="mt-3 font-semibold text-ink">Restaurants</p></div>
+        <div class="card reveal rounded-2xl p-6 text-center hover:-translate-y-1 transition"><i data-lucide="rocket" class="h-8 w-8 mx-auto text-brand-blue"></i><p class="mt-3 font-semibold text-ink">Startups</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROCESS -->
+  <section id="process" class="relative py-24 soft-bg">
+    <div class="max-w-6xl mx-auto px-5">
+      <div class="text-center reveal">
+        <p class="text-brand-blue font-bold tracking-widest text-xs uppercase">How We Work</p>
+        <h2 class="mt-3 text-3xl sm:text-4xl lg:text-5xl font-extrabold">From idea to <span class="gradient-text">launch</span> in 4 steps</h2>
+      </div>
+      <div class="mt-14 grid md:grid-cols-4 gap-6">
+        <div class="card reveal rounded-2xl p-6 relative"><span class="font-display text-5xl font-extrabold text-blue-100">01</span><span class="h-11 w-11 rounded-xl bg-blue-50 grid place-items-center -mt-2"><i data-lucide="search" class="h-5 w-5 text-brand-blue"></i></span><h3 class="mt-4 font-bold">Discover</h3><p class="text-sm text-slate-600 mt-1">We learn your goals, audience and market to shape a clear plan.</p></div>
+        <div class="card reveal rounded-2xl p-6"><span class="font-display text-5xl font-extrabold text-blue-100">02</span><span class="h-11 w-11 rounded-xl bg-blue-50 grid place-items-center -mt-2"><i data-lucide="pen-tool" class="h-5 w-5 text-brand-blue"></i></span><h3 class="mt-4 font-bold">Design</h3><p class="text-sm text-slate-600 mt-1">Wireframes and a brand-aligned interface you approve before coding.</p></div>
+        <div class="card reveal rounded-2xl p-6"><span class="font-display text-5xl font-extrabold text-blue-100">03</span><span class="h-11 w-11 rounded-xl bg-blue-50 grid place-items-center -mt-2"><i data-lucide="terminal" class="h-5 w-5 text-brand-blue"></i></span><h3 class="mt-4 font-bold">Build</h3><p class="text-sm text-slate-600 mt-1">Clean, tested and optimized code with regular progress demos.</p></div>
+        <div class="card reveal rounded-2xl p-6"><span class="font-display text-5xl font-extrabold text-blue-100">04</span><span class="h-11 w-11 rounded-xl bg-blue-50 grid place-items-center -mt-2"><i data-lucide="rocket" class="h-5 w-5 text-brand-blue"></i></span><h3 class="mt-4 font-bold">Launch &amp; Support</h3><p class="text-sm text-slate-600 mt-1">Go live confidently and keep growing with ongoing support.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- TECH MARQUEE -->
+  <section class="py-8 border-y border-slate-100 overflow-hidden bg-white" aria-label="Technologies we use">
+    <div class="marquee-track gap-12 text-slate-400 font-display text-2xl font-bold whitespace-nowrap">
+      <span class="flex gap-12"><span>Next.js</span><span>React</span><span>Node.js</span><span>Tailwind CSS</span><span>Supabase</span><span>n8n</span><span>Make</span><span>OpenAI</span><span>WordPress</span><span>Figma</span><span>Google Ads</span><span>Meta Ads</span></span>
+      <span class="flex gap-12" aria-hidden="true"><span>Next.js</span><span>React</span><span>Node.js</span><span>Tailwind CSS</span><span>Supabase</span><span>n8n</span><span>Make</span><span>OpenAI</span><span>WordPress</span><span>Figma</span><span>Google Ads</span><span>Meta Ads</span></span>
+    </div>
+  </section>
+
+  <!-- PRICING -->
+  <section id="pricing" class="relative py-24">
+    <div class="max-w-7xl mx-auto px-5">
+      <div class="text-center max-w-2xl mx-auto reveal">
+        <p class="text-brand-blue font-bold tracking-widest text-xs uppercase">Support Plans</p>
+        <h2 class="mt-3 text-3xl sm:text-4xl lg:text-5xl font-extrabold">Technical support that <span class="gradient-text">fits your budget</span></h2>
+        <div class="mt-8 inline-flex items-center gap-2 card rounded-full p-1.5">
+          <button id="bill-monthly" class="rounded-full px-5 py-2 text-sm font-semibold bg-gradient-to-r from-brand-blue to-brand-sky text-white">Monthly</button>
+          <button id="bill-annual" class="rounded-full px-5 py-2 text-sm font-semibold text-slate-600">Annual <span class="text-emerald-600 text-xs">Save 20%</span></button>
+        </div>
+      </div>
+      <div class="mt-14 grid md:grid-cols-3 gap-6 items-stretch" style="perspective:1200px">
+        <div class="card reveal rounded-3xl p-8 flex flex-col" data-tilt data-tilt-max="6">
+          <h3 class="font-display text-xl font-bold">Starter</h3><p class="text-sm text-slate-500">For small websites</p>
+          <p class="mt-6 text-ink"><span class="text-xs align-top">NPR</span> <span class="price font-display text-5xl font-extrabold" data-monthly="4,999" data-annual="3,999">4,999</span><span class="text-slate-500 text-sm"> /<span class="cycle">mo</span></span></p>
+          <ul class="mt-6 space-y-3 text-sm text-slate-600 flex-1">
+            <li class="flex gap-2"><i data-lucide="check" class="h-4 w-4 text-brand-blue mt-0.5"></i>Uptime monitoring</li>
+            <li class="flex gap-2"><i data-lucide="check" class="h-4 w-4 text-brand-blue mt-0.5"></i>Monthly backups</li>
+            <li class="flex gap-2"><i data-lucide="check" class="h-4 w-4 text-brand-blue mt-0.5"></i>Security updates</li>
+            <li class="flex gap-2"><i data-lucide="check" class="h-4 w-4 text-brand-blue mt-0.5"></i>Email support (48h)</li>
+          </ul>
+          <a href="#contact" data-plan="Starter Support Plan" class="plan-btn outline-btn mt-8 rounded-full py-3 text-center font-semibold">Choose Starter</a>
+        </div>
+        <div class="relative reveal rounded-3xl p-8 flex flex-col bg-gradient-to-b from-brand-blue to-[#0d47a1] text-white shadow-2xl shadow-brand-blue/30" data-tilt data-tilt-max="6">
+          <span class="absolute -top-3 left-1/2 -translate-x-1/2 rounded-full bg-gradient-to-r from-brand-cyan to-brand-sky px-4 py-1 text-xs font-bold text-white shadow">Most Popular</span>
+          <h3 class="font-display text-xl font-bold !text-white">Business</h3><p class="text-sm text-blue-100">For growing companies</p>
+          <p class="mt-6"><span class="text-xs align-top">NPR</span> <span class="price font-display text-5xl font-extrabold" data-monthly="12,999" data-annual="9,999">12,999</span><span class="text-blue-100 text-sm"> /<span class="cycle">mo</span></span></p>
+          <ul class="mt-6 space-y-3 text-sm text-blue-50 flex-1">
+            <li class="flex gap-2"><i data-lucide="check" class="h-4 w-4 text-cyan-300 mt-0.5"></i>Everything in Starter</li>
+            <li class="flex gap-2"><i data-lucide="check" class="h-4 w-4 text-cyan-300 mt-0.5"></i>Weekly backups &amp; speed tuning</li>
+            <li class="flex gap-2"><i data-lucide="check" class="h-4 w-4 text-cyan-300 mt-0.5"></i>5 hours of content/dev changes</li>
+            <li class="flex gap-2"><i data-lucide="check" class="h-4 w-4 text-cyan-300 mt-0.5"></i>AI chatbot maintenance</li>
+            <li class="flex gap-2"><i data-lucide="check" class="h-4 w-4 text-cyan-300 mt-0.5"></i>Priority support (12h)</li>
+          </ul>
+          <a href="#contact" data-plan="Business Support Plan" class="plan-btn mt-8 rounded-full bg-white py-3 text-center font-semibold text-brand-blue hover:bg-blue-50 transition">Choose Business</a>
+        </div>
+        <div class="card reveal rounded-3xl p-8 flex flex-col" data-tilt data-tilt-max="6">
+          <h3 class="font-display text-xl font-bold">Enterprise</h3><p class="text-sm text-slate-500">AI &amp; SaaS operations</p>
+          <p class="mt-6 text-ink"><span class="text-xs align-top">NPR</span> <span class="price font-display text-5xl font-extrabold" data-monthly="29,999" data-annual="23,999">29,999</span><span class="text-slate-500 text-sm"> /<span class="cycle">mo</span></span></p>
+          <ul class="mt-6 space-y-3 text-sm text-slate-600 flex-1">
+            <li class="flex gap-2"><i data-lucide="check" class="h-4 w-4 text-brand-blue mt-0.5"></i>Everything in Business</li>
+            <li class="flex gap-2"><i data-lucide="check" class="h-4 w-4 text-brand-blue mt-0.5"></i>AI workflow monitoring (n8n/Make)</li>
+            <li class="flex gap-2"><i data-lucide="check" class="h-4 w-4 text-brand-blue mt-0.5"></i>20 hours of development</li>
+            <li class="flex gap-2"><i data-lucide="check" class="h-4 w-4 text-brand-blue mt-0.5"></i>Security audits</li>
+            <li class="flex gap-2"><i data-lucide="check" class="h-4 w-4 text-brand-blue mt-0.5"></i>Dedicated manager, 2h response</li>
+          </ul>
+          <a href="#contact" data-plan="Enterprise Support Plan" class="plan-btn outline-btn mt-8 rounded-full py-3 text-center font-semibold">Choose Enterprise</a>
+        </div>
+      </div>
+      <p class="text-center text-xs text-slate-400 mt-8">Prices are sample figures. Edit them in index.html to match your real rates.</p>
+    </div>
+  </section>
+
+  <!-- WORK -->
+  <section id="work" class="relative py-24 soft-bg">
+    <div class="max-w-7xl mx-auto px-5">
+      <div class="text-center max-w-2xl mx-auto reveal">
+        <p class="text-brand-blue font-bold tracking-widest text-xs uppercase">Recent Work</p>
+        <h2 class="mt-3 text-3xl sm:text-4xl lg:text-5xl font-extrabold">Projects that <span class="gradient-text">deliver results</span></h2>
+      </div>
+      <div class="mt-12 grid md:grid-cols-3 gap-6" style="perspective:1200px">
+        <article class="card reveal rounded-3xl overflow-hidden group" data-tilt data-tilt-max="8">
+          <div class="h-44 bg-gradient-to-br from-brand-blue to-brand-cyan grid place-items-center"><i data-lucide="shopping-cart" class="h-14 w-14 text-white/95 group-hover:scale-110 transition"></i></div>
+          <div class="p-6"><span class="text-xs font-semibold text-brand-blue">Website Development</span><h3 class="mt-1 font-bold text-lg">E-commerce Platform</h3><p class="text-sm text-slate-600 mt-1">Fast online store with local payment integration and inventory dashboard.</p><p class="mt-3 text-sm font-semibold text-emerald-600">+120% online orders</p></div>
+        </article>
+        <article class="card reveal rounded-3xl overflow-hidden group" data-tilt data-tilt-max="8">
+          <div class="h-44 bg-gradient-to-br from-brand-purple to-brand-blue grid place-items-center"><i data-lucide="bot" class="h-14 w-14 text-white/95 group-hover:scale-110 transition"></i></div>
+          <div class="p-6"><span class="text-xs font-semibold text-brand-blue">AI Chatbot</span><h3 class="mt-1 font-bold text-lg">Customer Support Agent</h3><p class="text-sm text-slate-600 mt-1">24/7 chatbot answering FAQs and capturing leads for a service business.</p><p class="mt-3 text-sm font-semibold text-emerald-600">-50% support workload</p></div>
+        </article>
+        <article class="card reveal rounded-3xl overflow-hidden group" data-tilt data-tilt-max="8">
+          <div class="h-44 bg-gradient-to-br from-brand-cyan to-brand-purple grid place-items-center"><i data-lucide="chart-no-axes-combined" class="h-14 w-14 text-white/95 group-hover:scale-110 transition"></i></div>
+          <div class="p-6"><span class="text-xs font-semibold text-brand-blue">Digital Marketing</span><h3 class="mt-1 font-bold text-lg">SEO &amp; Ads Campaign</h3><p class="text-sm text-slate-600 mt-1">Search and social campaign built around local customer intent.</p><p class="mt-3 text-sm font-semibold text-emerald-600">3x organic traffic</p></div>
+        </article>
+      </div>
+      <p class="text-center text-xs text-slate-400 mt-6">Sample projects. Replace with your real portfolio.</p>
+    </div>
+  </section>
+
+  <!-- TESTIMONIALS -->
+  <section class="relative py-24">
+    <div class="max-w-7xl mx-auto px-5">
+      <div class="text-center reveal">
+        <p class="text-brand-blue font-bold tracking-widest text-xs uppercase">Testimonials</p>
+        <h2 class="mt-3 text-3xl sm:text-4xl lg:text-5xl font-extrabold">What clients <span class="gradient-text">say</span></h2>
+      </div>
+      <div class="mt-12 grid md:grid-cols-3 gap-6">
+        <figure class="card reveal rounded-3xl p-7"><div class="flex gap-1 text-amber-400"><i data-lucide="star" class="h-4 w-4 fill-current"></i><i data-lucide="star" class="h-4 w-4 fill-current"></i><i data-lucide="star" class="h-4 w-4 fill-current"></i><i data-lucide="star" class="h-4 w-4 fill-current"></i><i data-lucide="star" class="h-4 w-4 fill-current"></i></div><blockquote class="mt-4 text-slate-600 text-sm">“Professional, quick and transparent. Our new website brings in leads every week.”</blockquote><figcaption class="mt-5 flex items-center gap-3"><span class="h-10 w-10 rounded-full bg-gradient-to-br from-brand-blue to-brand-sky grid place-items-center text-white font-bold text-sm">R</span><span class="text-sm font-semibold text-ink">Retail Business Owner<span class="block text-xs font-normal text-slate-500">Kathmandu</span></span></figcaption></figure>
+        <figure class="card reveal rounded-3xl p-7"><div class="flex gap-1 text-amber-400"><i data-lucide="star" class="h-4 w-4 fill-current"></i><i data-lucide="star" class="h-4 w-4 fill-current"></i><i data-lucide="star" class="h-4 w-4 fill-current"></i><i data-lucide="star" class="h-4 w-4 fill-current"></i><i data-lucide="star" class="h-4 w-4 fill-current"></i></div><blockquote class="mt-4 text-slate-600 text-sm">“The AI automation saved our team hours every day. Highly recommended.”</blockquote><figcaption class="mt-5 flex items-center gap-3"><span class="h-10 w-10 rounded-full bg-gradient-to-br from-brand-purple to-brand-blue grid place-items-center text-white font-bold text-sm">A</span><span class="text-sm font-semibold text-ink">Agency Founder<span class="block text-xs font-normal text-slate-500">Lalitpur</span></span></figcaption></figure>
+        <figure class="card reveal rounded-3xl p-7"><div class="flex gap-1 text-amber-400"><i data-lucide="star" class="h-4 w-4 fill-current"></i><i data-lucide="star" class="h-4 w-4 fill-current"></i><i data-lucide="star" class="h-4 w-4 fill-current"></i><i data-lucide="star" class="h-4 w-4 fill-current"></i><i data-lucide="star" class="h-4 w-4 fill-current"></i></div><blockquote class="mt-4 text-slate-600 text-sm">“Great branding and support. They really care about results.”</blockquote><figcaption class="mt-5 flex items-center gap-3"><span class="h-10 w-10 rounded-full bg-gradient-to-br from-brand-cyan to-brand-blue grid place-items-center text-white font-bold text-sm">S</span><span class="text-sm font-semibold text-ink">Startup Co-founder<span class="block text-xs font-normal text-slate-500">Pokhara</span></span></figcaption></figure>
+      </div>
+      <p class="text-center text-xs text-slate-400 mt-6">Sample testimonials. Replace with real client feedback.</p>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section id="faq" class="relative py-24 soft-bg">
+    <div class="max-w-3xl mx-auto px-5">
+      <div class="text-center reveal">
+        <p class="text-brand-blue font-bold tracking-widest text-xs uppercase">FAQ</p>
+        <h2 class="mt-3 text-3xl sm:text-4xl lg:text-5xl font-extrabold">Frequently asked <span class="gradient-text">questions</span></h2>
+      </div>
+      <div class="mt-10 space-y-4">
+        <details class="faq reveal" open><summary>How long does a website take to build?</summary><p class="mt-3 text-sm text-slate-600">A business website usually takes 2 to 4 weeks. Larger web apps and SaaS products are scoped individually after a discovery call.</p></details>
+        <details class="faq reveal"><summary>Can you automate my business processes with AI?</summary><p class="mt-3 text-sm text-slate-600">Yes. We build custom AI workflows with n8n and Make for lead handling, invoicing, reporting, customer support and more.</p></details>
+        <details class="faq reveal"><summary>Do you provide support after launch?</summary><p class="mt-3 text-sm text-slate-600">Yes. Our Technical Support plans include monitoring, backups, security updates, and priority help from our team.</p></details>
+        <details class="faq reveal"><summary>How much does a project cost?</summary><p class="mt-3 text-sm text-slate-600">Cost depends on scope. Send us your requirements through the form and we'll reply with a clear, itemized quote within 24 hours.</p></details>
+        <details class="faq reveal"><summary>Will I own the website and code?</summary><p class="mt-3 text-sm text-slate-600">Yes. Once the project is paid in full, you own all deliverables, including design files and source code.</p></details>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA BANNER -->
+  <section class="dark-band relative py-20 overflow-hidden">
+    <div class="orb w-80 h-80 bg-brand-cyan -top-10 left-10 opacity-30"></div>
+    <div class="relative max-w-4xl mx-auto px-5 text-center reveal">
+      <h2 class="text-3xl sm:text-4xl font-extrabold">Ready to grow your business online?</h2>
+      <p class="mt-4 text-slate-200">Tell us about your idea. We'll turn it into a working digital product.</p>
+      <div class="mt-8 flex flex-wrap justify-center gap-4">
+        <a href="#contact" class="rounded-full bg-white text-brand-blue px-8 py-3.5 font-bold hover:bg-blue-50 transition inline-flex items-center gap-2">Get a Free Quote <i data-lucide="arrow-right" class="h-5 w-5"></i></a>
+        <a href="https://wa.me/9779762519563" target="_blank" rel="noopener" class="rounded-full border border-white/40 px-8 py-3.5 font-semibold text-white hover:bg-white/10 transition inline-flex items-center gap-2"><i data-lucide="message-circle" class="h-5 w-5"></i> Chat on WhatsApp</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact" class="relative py-24 overflow-hidden">
+    <div class="orb w-96 h-96 bg-brand-sky -bottom-20 -left-20"></div>
+    <div class="relative max-w-7xl mx-auto px-5 grid lg:grid-cols-5 gap-10">
+      <div class="lg:col-span-2 reveal">
+        <p class="text-brand-blue font-bold tracking-widest text-xs uppercase">Contact Us</p>
+        <h2 class="mt-3 text-3xl sm:text-4xl lg:text-5xl font-extrabold">Let's build something <span class="gradient-text">great</span></h2>
+        <p class="mt-4 text-slate-600">Tell us about your project and we'll reply within 24 hours.</p>
+        <ul class="mt-8 space-y-5">
+          <li><a href="tel:+9779762519563" class="flex items-center gap-4 group"><span class="card h-12 w-12 rounded-xl grid place-items-center group-hover:border-brand-sky"><i data-lucide="phone" class="h-5 w-5 text-brand-blue"></i></span><span><span class="block text-xs text-slate-500">Call us</span><span class="font-semibold text-ink">+977 9762519563</span></span></a></li>
+          <li><a href="mailto:boy082913@gmail.com" class="flex items-center gap-4 group"><span class="card h-12 w-12 rounded-xl grid place-items-center group-hover:border-brand-sky"><i data-lucide="mail" class="h-5 w-5 text-brand-blue"></i></span><span><span class="block text-xs text-slate-500">Email</span><span class="font-semibold text-ink">boy082913@gmail.com</span></span></a></li>
+          <li class="flex items-center gap-4"><span class="card h-12 w-12 rounded-xl grid place-items-center"><i data-lucide="map-pin" class="h-5 w-5 text-brand-blue"></i></span><span><span class="block text-xs text-slate-500">Location</span><span class="font-semibold text-ink">Kathmandu, Nepal</span></span></li>
+          <li class="flex items-center gap-4"><span class="card h-12 w-12 rounded-xl grid place-items-center"><i data-lucide="clock" class="h-5 w-5 text-brand-blue"></i></span><span><span class="block text-xs text-slate-500">Working hours</span><span class="font-semibold text-ink">Sun - Fri, 9:00 AM - 6:00 PM</span></span></li>
+        </ul>
+      </div>
+
+      <form id="contact-form" class="lg:col-span-3 card reveal rounded-3xl p-7 sm:p-9 space-y-5" novalidate>
+        <input type="hidden" name="access_key" id="access_key" value="" />
+        <input type="hidden" name="subject" value="New enquiry from bogatitech.com" />
+        <input type="hidden" name="from_name" value="Bogati Tech Website" />
+        <input type="checkbox" name="botcheck" class="hidden" style="display:none" tabindex="-1" autocomplete="off" />
+
+        <div class="grid sm:grid-cols-2 gap-5">
+          <div><label for="name" class="text-sm font-medium text-ink">Full name *</label><input id="name" name="name" required autocomplete="name" class="input-field mt-1.5" placeholder="Your name" /></div>
+          <div><label for="email" class="text-sm font-medium text-ink">Email *</label><input id="email" name="email" type="email" required autocomplete="email" class="input-field mt-1.5" placeholder="you@company.com" /></div>
+          <div><label for="phone" class="text-sm font-medium text-ink">Phone</label><input id="phone" name="phone" type="tel" autocomplete="tel" class="input-field mt-1.5" placeholder="+977 ..." /></div>
+          <div><label for="service" class="text-sm font-medium text-ink">Service interested in *</label>
+            <select id="service" name="service" required class="input-field mt-1.5">
+              <option value="">Select a service</option>
+              <option>Digital Marketing</option><option>Website Development</option><option>Graphic Designing</option><option>AI Automation</option><option>AI Chatbots</option><option>SaaS Products</option><option>Technical Support Plans</option><option>Starter Support Plan</option><option>Business Support Plan</option><option>Enterprise Support Plan</option>
+            </select></div>
+        </div>
+        <div><label for="message" class="text-sm font-medium text-ink">Message *</label><textarea id="message" name="message" rows="5" required class="input-field mt-1.5" placeholder="Tell us about your project..."></textarea></div>
+        <button type="submit" id="submit-btn" class="glow-btn w-full inline-flex items-center justify-center gap-2 rounded-full py-3.5 font-semibold">
+          <span id="submit-label">Send Message</span><i data-lucide="send" class="h-5 w-5"></i>
+        </button>
+        <p id="form-status" role="status" aria-live="polite" class="text-sm text-center min-h-[1.25rem]"></p>
+      </form>
+    </div>
+  </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="bg-ink text-slate-300">
+    <div class="max-w-7xl mx-auto px-5 py-14 grid md:grid-cols-4 gap-10">
+      <div class="md:col-span-2">
+        <div class="flex items-center gap-3"><span class="bg-white rounded-xl p-1"><img src="assets/img/logo.jpg" alt="" class="h-11 w-11 object-contain" /></span><span class="font-display font-extrabold text-xl text-white">Bogati<span class="text-sky-300">Tech</span></span></div>
+        <p class="mt-4 text-sm text-slate-400 max-w-sm">Transforming ideas into digital reality with innovative solutions for your business.</p>
+      </div>
+      <div><h4 class="font-semibold mb-3 !text-white">Services</h4><ul class="space-y-2 text-sm text-slate-400"><li>Website Development</li><li>AI Automation</li><li>AI Chatbots</li><li>Digital Marketing</li><li>Graphic Designing</li><li>SaaS Products</li></ul></div>
+      <div><h4 class="font-semibold mb-3 !text-white">Contact</h4><ul class="space-y-2 text-sm text-slate-400"><li>+977 9762519563</li><li>boy082913@gmail.com</li><li>Kathmandu, Nepal</li><li>bogatitech.com</li></ul></div>
+    </div>
+    <div class="border-t border-white/10 py-5 text-center text-xs text-slate-500">© <span id="year"></span> Bogati Tech. All rights reserved.</div>
+  </footer>
+
+  <a href="https://wa.me/9779762519563?text=Hello%20Bogati%20Tech%2C%20I%27d%20like%20to%20discuss%20a%20project." target="_blank" rel="noopener" class="wa-btn fixed bottom-6 right-6 z-40 h-14 w-14 rounded-full bg-[#25D366] grid place-items-center shadow-xl" aria-label="Chat on WhatsApp">
+    <i data-lucide="message-circle" class="h-7 w-7 text-white"></i>
+  </a>
+
+  <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.8.1/vanilla-tilt.min.js"></script>
+  <script type="importmap">{ "imports": { "three": "https://cdn.jsdelivr.net/npm/three@0.160.0/build/three.module.js" } }</script>
+  <script type="module" src="assets/js/main.js"></script>
+</body>
+</html>
